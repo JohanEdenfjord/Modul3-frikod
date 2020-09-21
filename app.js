@@ -54,13 +54,12 @@ const nAgt = navigator.userAgent;
     }
   });
 
-  appNameButton.addEventListener('click', () => {
+  appNameButton.addEventListener("click", () => {
     display.innerHTML = navigator.appName;
-  })
+  });
 
   locationButton.addEventListener("click", () => {
     navigator.geolocation.getCurrentPosition(success, error);
     //heheh. something wierd huh?
   });
-  
 })();
