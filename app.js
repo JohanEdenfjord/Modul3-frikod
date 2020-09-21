@@ -27,10 +27,10 @@ const backgroundImgButton = document.querySelector(".backgroundButton");
   async function backgroundChanger() {
     await backgroundLoader()
       .then((image) => {
-        document.body.style.backgroundImage = `url(/img/${image})`;
+        document.body.style.backgroundImage = `url(./img/${image})`;
       })
       .catch((image) => {
-        document.body.style.backgroundImage = `url(/wrongimg/${image})`;
+        document.body.style.backgroundImage = `url(./wrongimg/${image})`;
       });
   }
 
