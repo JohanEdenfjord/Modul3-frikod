@@ -28,30 +28,29 @@ const backgroundImgButton = document.querySelector(".backgroundButton");
     display.innerHTML = `ERROR(${err.code}): ${err.message}`;
   }
 
-  backgroundLoader = () =>{
+  backgroundLoader = () => {
     return new Promise((resolve, reject) => {
-    let randomNumber = Math.floor(Math.random() * 8);
-    console.log("randomnumber " + randomNumber)
-    if(randomNumber > 0 && randomNumber < 7){
-      resolve(randomNumber + ".jpg");
-    }else{
-      reject("0.jpg");
-    }
-  })}
+      let randomNumber = Math.floor(Math.random() * 8);
+      
+      if (randomNumber > 0 && randomNumber < 7) {
+        resolve(randomNumber + ".jpg");
+      } else {
+        reject("0.jpg");
+      }
+    });
+  };
 
-  backgroundImgButton.addEventListener("click", () =>
-    backgroundChanger()
-  );
+  backgroundImgButton.addEventListener("click", () => backgroundChanger());
 
-  
-    async function backgroundChanger() {
-     await backgroundLoader().then((image) => {
-      document.body.style.backgroundImage = `url(/img/${image})`
-     }).catch((image) => {
-      document.body.style.backgroundImage = `url(/wrongimg/${image})`
-     })
-    };
-    
+  async function backgroundChanger() {
+    await backgroundLoader()
+      .then((image) => {
+        document.body.style.backgroundImage = `url(/img/${image})`;
+      })
+      .catch((image) => {
+        document.body.style.backgroundImage = `url(/wrongimg/${image})`;
+      });
+  }
 
   async function success(pos) {
     let crd = await pos.coords;
@@ -59,7 +58,7 @@ const backgroundImgButton = document.querySelector(".backgroundButton");
   }
 
   clipboardButton.addEventListener("click", () => {
-    console.log(nAgt);
+    
     if (nAgt.includes("Firefox")) {
       display.innerText =
         "you are using Firefox and cant get Clipboard from here";
