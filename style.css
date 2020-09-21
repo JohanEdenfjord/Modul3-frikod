@@ -1,0 +1,46 @@
+.action-div {
+  
+  height: 350px;
+  border: 1px solid blue;
+  border-radius: 10%;
+  
+  background-color: cadetblue;
+}
+
+.display {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  margin-top: 50px;
+ 
+  background-color: seagreen;
+}
+
+.buttonsdiv {
+  width: fit-content;
+  height: 200px;
+  float: left;
+  margin: auto;
+  
+}
+
+.buttons {
+  width: 33%;
+  float: left;
+  height: 200px;
+  border: black 2px solid;
+  border-radius: 25px;
+  background-color: cornflowerblue;
+}
+
+button {
+  width: 100px;
+  height: 20px;
+  margin-top: 33%;
+  margin-left: 33%;
+}
+
+p {
+  text-align: center;
+  padding: 33%;  
+}
