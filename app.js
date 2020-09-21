@@ -1,21 +1,3 @@
-/*
-* Skapa en webbsida där du använder:
-
-* navigator objektet. 
-   - Skapa 3 knappar som gör vardera:
-      - Skriver ut appName
-      - Skriver ut geolocation (longitude och latitude)
-      - Skriver ut texten som finns i clipboard (alltså det som finns där i när du gjort Ctrl-c / Command-c)
-      
-* Skapa en funktion som returnerar ett Promise som både resolvar och rejectar.
- - Kör din Promise-funktion med async/await och skriv ut vad den resolvar. 
- - Kör din Promise-funktion när den resolvar och skriv ut på sajten mha .then()
- - Kör din Promise-funktion när den rejectar och skriv ut på sajten mha .catch()
-
-* Prettier för att autoformattera koden.
-* Ingenting får skrivas ut i konsolen!
-* Använd beskrivande variabel- och funktionsnamn.
-*/
 const clipboardButton = document.querySelector("#clipboard-info");
 let locationButton = document.querySelector("#geolocation");
 let appNameButton = document.querySelector("#appname");
