@@ -3,7 +3,7 @@
   height: 350px;
   border: 1px solid blue;
   border-radius: 10%;
-  
+  opacity: 30%;
   background-color: cadetblue;
 }
 
@@ -12,7 +12,7 @@
   height: 250px;
   margin: auto;
   margin-top: 50px;
- 
+  opacity: 90%;
   background-color: seagreen;
 }
 
@@ -21,7 +21,7 @@
   height: 200px;
   float: left;
   margin: auto;
-  
+  opacity: 40%;
 }
 
 .buttons {
@@ -31,9 +31,10 @@
   border: black 2px solid;
   border-radius: 25px;
   background-color: cornflowerblue;
+  opacity: 40%;
 }
 
-button {
+.ctrlButton {
   width: 100px;
   height: 20px;
   margin-top: 33%;
@@ -43,4 +44,16 @@ button {
 p {
   text-align: center;
   padding: 33%;  
+}
+
+.topBorder {
+  top: 0;
+  height: 25px;
+  background-color: lavender;
+}
+
+.backgroundButton {
+  background-color: lawngreen;
+  width: 150px;
+  align-content: center;
 }
